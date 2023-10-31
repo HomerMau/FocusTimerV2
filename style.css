@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --primary-color: hsl(240, 6%, 21%);
+  --non-sel-icons-pd: hsl(240, 9%, 89%);
+  --sel-icons-pd: hsl(194, 97%, 31%);
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.dark {
+  --bg-color: hsl(240, 6%, 21%);
+  --primary-color: hsl(0, 9%, 83%);
+  --sel-icons-pd: hsl(194, 97%, 31%);
+  --non-sel-icons-pd: hsl(240, 4%, 16%);
+
+}
+
+html.dark .ph-moon,
+html:not(.dark) .ph-sun {
+  display: none;
+}
+
+#toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+  color: var(--primary-color);
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+
+  transition: 0.4s;
+
+}
+
+#app {
+  display: grid;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+  
+}
+
+#container {
+  gap: 19rem;
+}
+
+#box {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+#controls {
+  margin-top: 1.6rem;
+  gap: 4rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 4.8rem;
+}
+
+#sounds {
+  width: 30.8rem;
+
+  gap: 3.2rem;
+
+  flex-wrap: wrap;
+}
+
+.ph-tree,
+.ph-cloud-rain,
+.ph-storefront,
+.ph-campfire {
+  background-color: var(--non-sel-icons-pd);
+  padding: 2.4rem;
+  border-radius: 2.4rem;
+
+  width: 13rem;
+  height: 15rem;
+
+  margin: 0.2rem;
+
+}
+
+.secondary {
+    color: var(--bg-color);
+    background-color: var(--sel-icons-pd);
+}
+

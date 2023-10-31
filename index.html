@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Focus Timer - Pomodoro</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./src/main.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app">
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar light mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <div id="container" class="flex">
+
+            <div id="box" class="flex">
+                <section id="timer" class="flex">
+                    <span id="minutes">25</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                </section>
+
+                <section id="controls" class="flex">
+                    <button data-action="toggleRunning" class="ph ph-play-circle">
+                        <span class="sr-only">Iniciar contador</span>
+                    </button>
+                    <button data-action="toggleRunning" class="ph ph-pause-circle">
+                        <span class="sr-only">Pausar contador</span>
+                    </button>
+                    <button data-action="setMoreFive" class="ph ph-plus-circle">
+                        <span class="sr-only">Acrescenta 5 minutos</span>
+                    </button>
+                    <button data-action="setMinusFive" class="ph ph-minus-circle">
+                        <span class="sr-only">Retira 5 minutos</span>
+                    </button>
+                </section>
+            </div>
+
+            </section>
+
+            <section id="sounds" class="flex">
+                <button data-action="tree" class="ph ph-tree">
+                    <span class="sr-only">Sons da floresta</span>
+                </button>
+
+                <button data-action="rainCloud" class="ph ph-cloud-rain">
+                    <span class="sr-only">Sons de chuva</span>
+                </button>
+
+                <button data-action="cafeteria" class="ph ph-storefront">
+                    <span class="sr-only">Sons de cafeteria</span>
+                </button>
+
+                <button data-action="firePlace" class="ph ph-campfire">
+                    <span class="sr-only">Sons de lareira</span>
+                </button>
+            </section>
+            </section>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
