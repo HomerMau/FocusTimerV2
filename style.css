@@ -125,3 +125,10 @@ button {
     background-color: var(--sel-icons-pd);
 }
 
+/* controls */
+.music-on-tr .ph-tree,
+.music-on-rc .ph-cloud-rain,
+.music-on-cf .ph-storefront,
+.music-on-fp .ph-campfire {
+    color: var(--bg-color);
+    background-color: var(--sel-icons-pd);}
