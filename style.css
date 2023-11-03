@@ -103,6 +103,7 @@ button {
   gap: 3.2rem;
 
   flex-wrap: wrap;
+  
 }
 
 .ph-tree,
@@ -117,6 +118,7 @@ button {
   height: 15rem;
 
   margin: 0.2rem;
+  transition: 0.3s;
 
 }
 
